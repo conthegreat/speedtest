@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speedtest.networkcontractor.co.uk • Throughput Test</title>
+    <meta name="description" content="10MB, 100MB and 1GB download endpoints for ThousandEyes agents. Clean throughput testing on speedtest.networkcontractor.co.uk">
+    <meta property="og:title" content="speedtest.networkcontractor.co.uk - Throughput Test Files">
+    <meta property="og:description" content="Direct download endpoints (10MB / 100MB / 1GB) for accurate ThousandEyes throughput testing.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+            font-weight: 600;
+        }
+
+        .section-header {
+            font-size: 2rem;
+            line-height: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .endpoint-card {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .endpoint-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .url-text {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+    <!-- Navbar -->
+    <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center justify-center w-9 h-9 bg-sky-500 rounded-2xl">
+                        <i class="fa-solid fa-tachometer-alt text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-display text-xl font-semibold tracking-tighter">speedtest</span>
+                        <span class="font-display text-xl font-semibold tracking-tighter text-sky-400">.networkcontractor.co.uk</span>
+                    </div>
+                </div>
+                
+                <a href="https://github.com/conthegreat" target="_blank" 
+                   class="flex items-center gap-x-2 px-5 py-2 text-sm font-medium rounded-3xl border border-slate-700 hover:bg-slate-900 transition-colors">
+                    <i class="fa-brands fa-github mr-2"></i>
+                    <span>conthegreat</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-screen-xl mx-auto px-6 pt-14 pb-10">
+        <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-3xl bg-slate-900 border border-slate-800 text-sm mb-6">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="font-medium text-emerald-400">Ready for ThousandEyes agents &amp; routers</span>
+            </div>
+            
+            <h1 class="text-6xl leading-[1.05] tracking-tighter font-display font-semibold">
+                Throughput Test<br>Endpoints
+            </h1>
+            
+            <p class="mt-5 text-xl text-slate-400">
+                Clean, direct download files for accurate network throughput testing with ThousandEyes.
+            </p>
+        </div>
+    </div>
+
+    <!-- Endpoints -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-16">
+        <div class="mb-6">
+            <span class="text-sky-400 text-sm font-semibold tracking-wider">THOUSANDEYES CONFIGURATION</span>
+            <h2 class="text-3xl font-semibold tracking-tight mt-1">Download Endpoints</h2>
+            <p class="text-slate-400 mt-1">Use these URLs directly in your ThousandEyes HTTP Server tests.</p>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3">
+            
+            <!-- 10MB -->
+            <div class="endpoint-card bg-slate-900 border border-slate-700 rounded-3xl p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <span class="text-2xl font-semibold">10 MB</span>
+                    </div>
+                    <div class="px-3 py-1 text-xs font-medium bg-emerald-500/10 text-emerald-400 rounded-2xl">Fast test</div>
+                </div>
+                
+                <div class="bg-slate-950 border border-slate-700 rounded-2xl p-4 mb-4">
+                    <div class="text-xs text-slate-400 mb-1">Direct URL</div>
+                    <div class="url-text text-emerald-400 text-sm break-all" id="url-10mb">
+                        https://speedtest.networkcontractor.co.uk/10mb
+                    </div>
+                </div>
+                
+                <button onclick="copyToClipboard('url-10mb', this)" 
+                        class="w-full flex items-center justify-center gap-x-2 h-11 rounded-2xl bg-slate-800 hover:bg-slate-700 active:bg-slate-600 transition-all text-sm font-medium">
+                    <i class="fa-solid fa-copy"></i>
+                    <span>Copy URL for ThousandEyes</span>
+                </button>
+            </div>
+
+            <!-- 100MB -->
+            <div class="endpoint-card bg-slate-900 border border-slate-700 rounded-3xl p-6 ring-1 ring-sky-500/30">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <span class="text-2xl font-semibold">100 MB</span>
+                    </div>
+                    <div class="px-3 py-1 text-xs font-medium bg-sky-500/10 text-sky-400 rounded-2xl">Recommended</div>
+                </div>
+                
+                <div class="bg-slate-950 border border-slate-700 rounded-2xl p-4 mb-4">
+                    <div class="text-xs text-slate-400 mb-1">Direct URL</div>
+                    <div class="url-text text-emerald-400 text-sm break-all" id="url-100mb">
+                        https://speedtest.networkcontractor.co.uk/100mb
+                    </div>
+                </div>
+                
+                <button onclick="copyToClipboard('url-100mb', this)" 
+                        class="w-full flex items-center justify-center gap-x-2 h-11 rounded-2xl bg-sky-500 hover:bg-sky-600 active:bg-sky-700 transition-all text-sm font-medium text-white">
+                    <i class="fa-solid fa-copy"></i>
+                    <span>Copy URL for ThousandEyes</span>
+                </button>
+            </div>
+
+            <!-- 1GB -->
+            <div class="endpoint-card bg-slate-900 border border-slate-700 rounded-3xl p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <span class="text-2xl font-semibold">1 GB</span>
+                    </div>
+                    <div class="px-3 py-1 text-xs font-medium bg-amber-500/10 text-amber-400 rounded-2xl">Long test</div>
+                </div>
+                
+                <div class="bg-slate-950 border border-slate-700 rounded-2xl p-4 mb-4">
+                    <div class="text-xs text-slate-400 mb-1">Direct URL</div>
+                    <div class="url-text text-emerald-400 text-sm break-all" id="url-1gb">
+                        https://speedtest.networkcontractor.co.uk/1gb
+                    </div>
+                </div>
+                
+                <button onclick="copyToClipboard('url-1gb', this)" 
+                        class="w-full flex items-center justify-center gap-x-2 h-11 rounded-2xl bg-slate-800 hover:bg-slate-700 active:bg-slate-600 transition-all text-sm font-medium">
+                    <i class="fa-solid fa-copy"></i>
+                    <span>Copy URL for ThousandEyes</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-4 text-xs text-slate-500 flex items-center gap-x-2">
+            <i class="fa-solid fa-info-circle"></i>
+            <span>Append <span class="font-mono text-emerald-400">?nocache=1735123456789</span> to any URL to prevent caching on repeated tests.</span>
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-14">
+        <div class="text-center mb-8">
+            <span class="text-sky-400 text-sm font-semibold tracking-[1.5px] uppercase">How it works</span>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6">
+                <div class="w-9 h-9 flex items-center justify-center bg-sky-500/10 text-sky-400 rounded-2xl mb-4">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+                <h3 class="font-semibold">HTTP Download</h3>
+                <p class="text-sm text-slate-400 mt-2">ThousandEyes agents download the full file from the clean URL and measure real throughput, latency and loss.</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6">
+                <div class="w-9 h-9 flex items-center justify-center bg-sky-500/10 text-sky-400 rounded-2xl mb-4">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3 class="font-semibold">Custom Domain</h3>
+                <p class="text-sm text-slate-400 mt-2">Served from <span class="font-medium text-white">speedtest.networkcontractor.co.uk</span> via GitHub Pages with your custom domain configured.</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6">
+                <div class="w-9 h-9 flex items-center justify-center bg-sky-500/10 text-sky-400 rounded-2xl mb-4">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="font-semibold">Accurate Results</h3>
+                <p class="text-sm text-slate-400 mt-2">Perfect for router and WAN monitoring. Use different sizes depending on link speed.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setup note -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-16">
+        <div class="max-w-3xl mx-auto bg-slate-900 border border-slate-700 rounded-3xl p-8">
+            <h3 class="font-semibold text-lg mb-3">How to set this up (for conthegreat)</h3>
+            <ol class="text-sm text-slate-300 space-y-2 list-decimal list-inside">
+                <li>Upload this <code class="bg-slate-800 px-1.5 py-0.5 rounded">index.html</code> to your GitHub repo <span class="font-mono text-emerald-400">conthegreat/speedtest</span> (or whatever repo name)</li>
+                <li>Enable GitHub Pages and connect the custom domain <span class="font-mono">speedtest.networkcontractor.co.uk</span></li>
+                <li>Create three files in the repo root:
+                    <div class="mt-1 ml-5 text-xs font-mono text-emerald-400">10mb &nbsp;&nbsp;•&nbsp;&nbsp; 100mb &nbsp;&nbsp;•&nbsp;&nbsp; 1gb</div>
+                </li>
+                <li>Commit and push — the clean URLs above will work immediately.</li>
+            </ol>
+            <div class="mt-4 text-xs text-slate-500">
+                For the larger files (especially 1GB), consider using <strong>Git LFS</strong> or host via GitHub Releases and add simple redirect pages if needed.
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8">
+        <div class="max-w-screen-xl mx-auto px-6 text-xs text-slate-500 flex flex-col md:flex-row md:items-center justify-between gap-y-3">
+            <div>
+                speedtest.networkcontractor.co.uk • Hosted on GitHub Pages
+            </div>
+            <div>
+                <a href="#" onclick="window.location.reload()" class="hover:text-slate-300 transition-colors">Reload</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard(elementId, buttonElement) {
+            const el = document.getElementById(elementId);
+            const text = el.textContent.trim();
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const originalHTML = buttonElement.innerHTML;
+                buttonElement.innerHTML = `<i class="fa-solid fa-check"></i> <span>Copied!</span>`;
+                buttonElement.disabled = true;
+                
+                setTimeout(() => {
+                    buttonElement.innerHTML = originalHTML;
+                    buttonElement.disabled = false;
+                }, 1600);
+            }).catch(() => {
+                // Fallback
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                
+                const originalHTML = buttonElement.innerHTML;
+                buttonElement.innerHTML = `<i class="fa-solid fa-check"></i> <span>Copied!</span>`;
+                setTimeout(() => {
+                    buttonElement.innerHTML = originalHTML;
+                }, 1400);
+            });
+        }
+        
+        function initialize() {
+            // Nothing dynamic needed anymore - URLs are hardcoded for the custom domain
+            console.log('%c[speedtest.networkcontractor.co.uk] Throughput test page initialized for conthegreat.', 'color:#64748b');
+        }
+        
+        window.onload = initialize;
+    </script>
+</body>
+</html>
